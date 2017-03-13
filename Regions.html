@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<style>
+      #map {
+        height: 600px;
+        width: 100%;
+       }
+    </style>
+    <title>Eigen.</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/device-mockups.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+  
+
+</head>
+<body >
+<nav class="navbar navbar-fixed-top navbar-inverse" style= "color: red;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: #d9d9d9;">
+    <div class="background-image"></div>
+  <div class="container content">
+    Eigen.  
+    <div class="pull-right">
+       <label id="uName" style="color:red;"></label>
+       <button class="btn btn-danger btn-sm" id="btnLogOut"/>Log Out</button>
+  </div>
+</nav>
+<div class="container" style="margin-top: 10px;">
+<div class="row">
+    <div class="col-lg-3 well-sm">
+       <label class="switch">
+           <input type="checkbox" id="ckbxShowRegion" class="checkbox" checked/>
+           <div class="slider round"></div>
+       </label>
+    </div>
+
+</div>
+<div class="map-container">
+<div id="map" class="map"></div>
+
+</div>
+</div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDLn_NOCXSeQNkFP60yjd6T0l2puITtt-U",
+    authDomain: "application-task-4e8fe.firebaseapp.com",
+    databaseURL: "https://application-task-4e8fe.firebaseio.com",
+    storageBucket: "application-task-4e8fe.appspot.com",
+    messagingSenderId: "642350060913"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>  
+    <script src="js/region.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqdZk0ZwPZ2NQmvid8N9Asa3AiZFp5e8I&callback=initMap">
+    </script>
+    </script>
+
+    
+</body>
+</html>

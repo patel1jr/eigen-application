@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Eigen.</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/device-mockups.css">
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+   
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="background-image"></div>
+<div class="container content">
+<div class="invoice">
+<div class="row">
+<div class="col-lg-12">
+<div class="form">
+      <h1>Eigen.</h1>
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="signup">                       
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" id="txtFName" />
+            </div>
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off" id="txtLName"/>
+            </div>
+          </div>
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off" id="txtEmailSignUp"/>
+          </div>
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off" id="txtPasswordSignUp"/>
+          </div>
+          <button class="button button-block" id="btnSignup"/>Get Started</button>
+         
+        </div>
+        <div id="login">   
+           
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off" id="txtEmailSignIn"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off" id="txtPasswordSignIn"/>
+          </div>
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          <button class="button button-block" id="btnLogin"/>Log In</button>
+          
+        </div>  
+     
+      </div>
+<div class="field-wrap"><label id="errMessage" style="color:red;font-size: 11px;"></label></div>
+
+      <!-- tab-content -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDLn_NOCXSeQNkFP60yjd6T0l2puITtt-U",
+    authDomain: "application-task-4e8fe.firebaseapp.com",
+    databaseURL: "https://application-task-4e8fe.firebaseio.com",
+    storageBucket: "application-task-4e8fe.appspot.com",
+    messagingSenderId: "642350060913"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/logIn.js"></script>
+</body>
+</html>

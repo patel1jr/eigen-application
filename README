@@ -1,0 +1,21 @@
+this application contains two pages :
+
+1)SignUp.html
+2)Regions.html 
+
+
+functionality : 
+
+make use of the Google Maps API to present the map and regions as Polygon’s
+
+• make use of the Firebase API to access the locations used to define the regions
+
+• create a user programmatically with email/password credentials. During registration, you will
+
+need to gather their first and last name and store it on the Firebase database
+
+• sign in to firebase using email/password credentials that you’ve created
+
+• include a button that can be used to toggle on/off the visibility of the regions
+
+• centre the map on the user’s current location
